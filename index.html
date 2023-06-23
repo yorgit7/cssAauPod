@@ -4,8 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            box-sizing: border-box;
+            font-family: 'Roboto Mono', monospace;
+         /*   background-image: url('three.svg');
+            */
+            background-size: cover;
+            background-color: hwb(44 96% 0%) rgba(255, 255, 255, 0.5);
+            
+
+        }
+        .k{
+            display: inline;
+        }
+        input.k{
+            border: none;
+            outline: none;
+            background-color: none;
+        }
+        input.k:hover{
+            background-color: none;
+
+        }
+        .main{
+            background-color: #fffcf4;
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            border: 2px solid rgb(113, 140, 197);
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 5px 5px 1px rgba(185, 9, 9, 0.3);
+        }
+        .main:active:not(input){
+            transform: translate(-49%,-49%);
+            box-shadow: none;
+        }
+        .dis{
+            text-align: center;
+            padding-top: 5px ;
+            margin-top: 0px;
+            padding-bottom: 15px;
+            font-size: 20px;
+        }
+        .big{
+            text-align: center;
+            padding-bottom: 15px;
+            
+            font-size: 20px;
+        }
+        hr{
+            width: 110%;
+            transform: translate(-4.5%, 0px);
+            border: rgb(113, 140, 197) 1px solid;
+        }
+        h2{
+            color: #f67373;
+            font-size: 40px;
+        }
+        span{
+            color: #244db6;
+        }
+        .note{
+            color: rgb(113, 140, 197);
+            font-size: 20px;
+        
+        }
+        .pp{
+            padding-bottom:5px ;
+            padding-top: 0px;
+        }
+        .dis{
+            
+            color: #f67373;
+        }
+
+    </style>
 </head>
 <body>
-    hello
+    <div class="main">
+        <p class="big">LOGIN</p>
+        <hr>
+        <div>
+            <H2>AAU <br><SPAN>PODCAST</SPAN></H2>
+            <div class="pp">
+                <p class="note">LOGIN</p>
+                <p class="note k">Username: </p>
+                <input type="text" class="k" name="name">
+                <br>
+                <p class="note k">Password: </p>
+                <input type="password" class="k" name="pass">
+                <hr>
+            </div>               
+        </div> 
+        <p class="dis">DISCOVER THE VOICES</p>   
+    </div>    
+
+    <script>
+        var m = document.querySelector(".main");
+        m.addEventListener("click", function(){
+            setTimeout(window.location="found.html", 00);
+        })
+    </script>
+
 </body>
 </html>
